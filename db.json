@@ -1,0 +1,22 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+      "price": 8.99
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "description": "Spicy pepperoni slices with mozzarella cheese and tomato sauce.",
+      "price": 9.99
+    },
+    {
+      "id": 3,
+      "name": "BBQ Chicken",
+      "description": "Grilled chicken, BBQ sauce, red onions, and cilantro.",
+      "price": 10.99
+    }
+  ]
+}

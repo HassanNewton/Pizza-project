@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pizza App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Pizzor</h1>
+      <ul>
+        <li v-for="pizza in pizzas" :key="pizza.id">
+          <strong>{{ pizza.name }}</strong><br />
+          {{ pizza.description }}<br />
+          Pris: {{ pizza.price }} kr
+          <br />
+          <button @click="removePizza(pizza.id)">Ta bort</button>
+        </li>
+      </ul>
+
+      <h3>Lägg till ny pizza</h3>
+      <input v-model="newPizza.name" placeholder="Pizza namn" />
+      <input v-model="newPizza.description" placeholder="Beskrivning" />
+      <input v-model.number="newPizza.price" type="number" placeholder="Pris" />
+      <button @click="addPizza">Lägg till pizza</button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
